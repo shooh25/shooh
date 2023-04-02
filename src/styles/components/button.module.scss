@@ -1,0 +1,13 @@
+@import "@/styles/variables";
+
+.root {
+  border-radius: 20px;
+  background: $white1;
+  display: inline-block;
+  padding: 6px 30px;
+
+  p {
+    color: $black1;
+    @include text7;
+  }
+}

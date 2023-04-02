@@ -1,0 +1,17 @@
+{
+  "source": ["output-tokens.json"],
+  "platforms": {
+    "scss": {
+      "buildPath": "src/styles/",
+      "transformGroup": "scss",
+      "files": [{
+        "destination": "_variables.scss",
+        "format": "scss/map-deep",
+        "mapName":"css-tokens",
+        "options": {
+          "outputReferences": true
+        }
+      }]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '@/styles/variables';
+
+.contents {
+  text-align: center;
+  padding-bottom: 50px;
+
+  @include mq(tablet) {
+    padding-bottom: 30px
+  }
+
+  h1 {
+    @include text1;
+  }
+
+  p {
+    @include text5;
+    margin-top: 6px;
+    color: $white3;
+
+    @include mq(tablet) {
+      margin-top: 4px;
+    }
+  }
+}

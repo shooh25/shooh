@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "transform": "token-transformer tokens.json output-tokens.json",
+    "style": "style-dictionary build --config style-dictionary.config.json"
   },
   "dependencies": {
     "@types/node": "18.15.9",
@@ -14,9 +16,18 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "microcms-js-sdk": "^2.3.2",
+    "moment": "^2.29.4",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-moment": "^1.1.3",
+    "react-use": "^17.4.0",
     "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "sass": "^1.60.0",
+    "style-dictionary": "^3.7.2",
+    "token-transformer": "^0.0.32"
   }
 }

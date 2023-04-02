@@ -1,0 +1,123 @@
+// Color
+
+$white4: #8e8e93 !default;
+$white3: #aeaeb2 !default;
+$white2: #c7c7cc !default;
+$white1: #ffffff !default;
+$black4: #3a3a3c !default;
+$black3: #2c2c2e !default;
+$black2: #1c1c1e !default;
+$black1: #000000 !default;
+
+// Font
+
+@mixin text1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 120%;
+
+  @include mq(tablet) {
+    font-size: 3.6rem;
+  }
+}
+
+@mixin text2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 120%;
+
+  @include mq(tablet) {
+    font-size: 3.2rem;
+  }
+}
+
+@mixin text3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 120%;
+
+  @include mq(tablet) {
+    font-size: 2rem;
+  }
+}
+
+@mixin text4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+
+  @include mq(tablet) {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin text5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 120%;
+
+  @include mq(tablet) {
+    font-size: 1.4rem;
+  }
+}
+
+@mixin text6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 170%;
+
+  @include mq(tablet) {
+    font-size: 1.4rem;
+  }
+}
+
+@mixin text7 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 170%;
+
+  @include mq(tablet) {
+    font-size: 1.4rem;
+  }
+}
+
+@mixin text8 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 170%;
+
+  @include mq(tablet) {
+    font-size: 1.2rem;
+  }
+}
+
+@mixin text9 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 170%;
+
+  @include mq(tablet) {
+    font-size: 1.2rem;
+  }
+}
+
+// Responsive
+
+$breakpoints: (
+  "pc": "screen and (min-width: 769px)",
+  "tablet": "screen and (max-width:768px)",
+  "sp": "screen and (max-width:540px)",
+);
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// Animation
+
+$easeOutQuad: cubic-bezier(0.11, 0.52, 0.46, 0.99);
+$easeInQuiad: cubic-bezier(.64,.01,1,.65);
+
+

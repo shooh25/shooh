@@ -1,0 +1,125 @@
+@import "@/styles/variables";
+
+.root {
+  height: calc(100vh - 60px);
+  min-height: 680px;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+
+  @include mq(sp) {
+    height: 100%;
+    padding-bottom: 120px;
+  }
+}
+
+.pageLinks {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  display: grid;
+
+  @include mq(sp) {
+    grid-template-columns: 1fr;
+  }
+
+  &_item {
+    border-radius: 20px;
+    padding-bottom: 100%;
+    background: $black2;
+    transition: all 0.4s $easeOutQuad;
+    position: relative;
+    overflow: hidden;
+
+    // ホバー時アニメーション
+    &:hover {
+      transition: all 0.4s $easeOutQuad;
+
+      .image {
+        transform: translateX(-50%) scale(1.06);
+        left: 50%;
+        top: 6px;
+      }
+
+      .texts {
+        p {
+          color: $white1;
+        }
+      }
+    }
+
+    .flame {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .greenGrad {
+      background: linear-gradient(114.07deg, #02b6b9 0%, #3349bb 100%);
+    }
+
+    .pinkGrad {
+      background: linear-gradient(114.07deg, #bb41b3 0%, #4158d0 100%);
+    }
+
+    .image {
+      transition: all 0.4s $easeOutQuad;
+      transform: translateX(-50%);
+      position: absolute;
+      height: 60%;
+      width: 60%;
+      left: 50%;
+      top: 10px;
+    }
+
+    .texts {
+      background: $black2;
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+
+      .container {
+        position: relative;
+        padding: 36px;
+
+        @include mq(tablet) {
+          padding: 24px;
+        }
+
+        &::before {
+          content: "";
+          background: linear-gradient(
+            180deg,
+            rgba(28, 28, 30, 0) 0%,
+            #1c1c1e 100%
+          );
+          position: absolute;
+          height: 100px;
+          width: 100%;
+          left: 0;
+          top: -100px;
+
+          @include mq(tablet) {
+            height: 60px;
+            top: -60px;
+          }
+        }
+      }
+
+      h2 {
+        @include text2;
+      }
+
+      p {
+        @include text8;
+        transition: 0.4s;
+        margin-top: 2px;
+        color: $white3;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,16 @@
+@import "@/styles/variables";
+
+.root {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 16px 0 30px 0;
+  border-top: 1px solid #2C2C2E;
+  justify-content: flex-end;
+
+  p {
+    @include text9;
+    color: $white4;
+  }
+}
