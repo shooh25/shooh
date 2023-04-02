@@ -24,12 +24,12 @@ body {
   min-height: 100vh;
   font-style: normal;
   list-style: none;
-  padding: 60px 20px 0px 20px;
+  padding: 50px 20px 0px 20px;
   width: 100%;
   color: $white1;
 
   @include mq(tablet) {
-    padding-top: 50px;
+    padding-top: 40px;
   }
 }
 

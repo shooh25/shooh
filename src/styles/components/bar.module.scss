@@ -32,7 +32,7 @@
   }
 
   @include mq(tablet) {
-    bottom: 20px;
+    bottom: 30px;
   }
 
   @include mq(sp) {
@@ -51,7 +51,7 @@
     
       100% {
         opacity: 100%;
-        bottom: 20px;
+        bottom: 30px;
       }
     }
   }
