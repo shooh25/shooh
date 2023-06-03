@@ -19,6 +19,7 @@ const About = () => {
     { name: "python", url: "https://www.python.org/" },
     { name: "react", url: "https://ja.reactjs.org/" },
     { name: "vue", url: "https://ja.vuejs.org/" },
+    { name: "ruby", url: "https://www.ruby-lang.org/ja/" },
     { name: "typescript", url: "https://www.typescriptlang.org/" },
     { name: "sass", url: "https://sass-lang.com/" },
     { name: "figma", url: "https://www.figma.com/ja/downloads/" },
@@ -60,6 +61,9 @@ const About = () => {
               </p>
               <p>
                 <span>2023.06</span>株式会社Speee 1Dayインターン
+              </p>
+              <p>
+                <span>2023.08</span>GMOインターネットグループ サマーインターン参加予定
               </p>
             </div>
           </div>
