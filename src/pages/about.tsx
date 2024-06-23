@@ -46,12 +46,12 @@ const About = () => {
               <p>
                 フロントエンドに興味があり、勉強しながら色々作ってます。プログラミングだけではなく、デザインもたまにやります。<br />
                 <br />
-                大学2年間は、フリーランス的にWeb/UIデザインやサイトのコーディングを行っていました。<br />
+                大学3年間は、フリーランス的にWeb/UIデザインやサイトのコーディングを行っていました。<br />
                 <br />
                 好きなアニメ : 攻殻機動隊, 進撃の巨人, BLEACH
               </p>
             </div>
-            <div className={styles.career}>
+            {/* <div className={styles.career}>
               <h2>Career</h2>
               <p>
                 <span>2021.03</span>立命館大学 情報理工学部 入学
@@ -71,7 +71,7 @@ const About = () => {
               <p>
                 <span>2023.09</span>株式会社マイナビ サマーインターン
               </p>
-            </div>
+            </div> */}
           </div>
           <div className={styles.skills}>
             <h2>Skills</h2>
