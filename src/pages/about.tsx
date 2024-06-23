@@ -48,7 +48,7 @@ const About = () => {
                 <br />
                 大学2年間は、フリーランス的にWeb/UIデザインやサイトのコーディングを行っていました。<br />
                 <br />
-                好きなアニメ : 攻殻機動隊, 進撃の巨人, BLEACH
+                {/* 好きなアニメ : 攻殻機動隊, 進撃の巨人, BLEACH */}
               </p>
             </div>
             <div className={styles.career}>
