@@ -5,8 +5,8 @@ const Heading = () => {
     <>
       <div className={styles.root}>
         <div className={styles.contents}>
-          <h1>Shooh</h1>
-          <p>A student learning Web Engineering and Design.</p>
+          <h1>Shooh&apos;s PF</h1>
+          <p>A student studying Web Engineering and Design.</p>
         </div>
       </div>
     </>
