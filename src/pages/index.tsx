@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Shooh</title>
+        <title>Shooh's PF</title>
       </Head>
 
       <div className={styles.root}>
